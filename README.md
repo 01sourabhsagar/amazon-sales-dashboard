@@ -88,7 +88,7 @@ ORDER BY revenue DESC;
 
 **Result:**
 
-![Revenue by Category](Result_Images/result2.png)
+![Revenue by Category](Result_Images/Revenue_by_Category.png)
 
 > 💡 **Insight:** Set and Kurta are the top revenue-generating categories. Set drives the highest revenue at ₹27.7L despite lower order volume than Kurta.
 
@@ -109,7 +109,7 @@ LIMIT 10;
 
 **Result:**
 
-![Revenue by State](Result_Images/result3.png)
+![Revenue by State](Result_Images/Revenue_by_State.png)
 
 > 💡 **Insight:** Uttar Pradesh, Gujarat, and Maharashtra are the top 3 states — together contributing over 52% of total revenue.
 
@@ -128,13 +128,7 @@ ORDER BY total_orders DESC;
 
 **Result:**
 
-| status | total_orders | percentage |
-|--------|-------------|------------|
-| Shipped | 3024 | 30.24% |
-| Delivered | 2974 | 29.74% |
-| Cancelled | 2007 | 20.07% |
-| Returned | 1013 | 10.13% |
-| Pending | 982 | 9.82% |
+![Revenue by State](Result_Images/orderstatusBreakdownCancellationRate.png)
 
 > 💡 **Insight:** 20.07% cancellation rate identified — addressing this through better product descriptions and delivery estimates could recover significant lost revenue.
 
@@ -154,7 +148,7 @@ ORDER BY month;
 
 **Result:**
 
-![Monthly Revenue](Result_Images/result5.png)
+![Monthly Revenue](Result_Images/monthlyRevenueOrder.png)
 
 > 💡 **Insight:** October and March show peak revenue months. February 2023 shows a dip — suggesting potential for targeted promotions during slow months to boost revenue by 10–15%.
 
@@ -176,7 +170,7 @@ LIMIT 5;
 
 **Result:**
 
-![Top Cities](Result_Images/result6.png)
+![Top Cities](Result_Images/TOP5CitiesBYorder.png)
 
 ---
 
@@ -193,7 +187,7 @@ ORDER BY orders DESC;
 
 **Result:**
 
-![B2B vs B2C](Result_Images/result7.png)
+![B2B vs B2C](Result_Images/B2B_vs_B2C_Revenue_Split.png)
 
 > 💡 **Insight:** B2B orders carry significantly higher average order values — a dedicated B2B strategy could improve overall margins.
 
@@ -213,7 +207,7 @@ ORDER BY return_rate_pct DESC;
 
 **Result:**
 
-![Return Rate](Result_Images/result8.png)
+![Return Rate](Result_Images/ReturnRATEbyCategory.png)
 
 > 💡 **Insight:** Bottom (12.08%) and Western Dress (10.71%) have the highest return rates — improving size guides for these categories could reduce returns by 8–12%.
 
@@ -233,7 +227,7 @@ ORDER BY avg_order_value DESC;
 
 **Result:**
 
-![Fulfilment AOV](Result_Images/result9.png)
+![Fulfilment AOV](Result_Images/Average_Order_Value_by_Fulfilment_Type.png)
 
 ---
 
@@ -254,7 +248,7 @@ FROM (
 
 **Result:**
 
-![Cumulative Revenue](Result_Images/result10.png)
+![Cumulative Revenue](Result_Images/CummulativeRevenueOverTime.png)
 
 > 💡 **Insight:** Consistent cumulative growth throughout the year with no major plateaus — confirming healthy business expansion.
 
@@ -287,7 +281,7 @@ ORDER BY ship_state, rn;
 
 **Result:**
 
-![Top Categories per State](Result_Images/result11.png)
+![Top Categories per State](Result_Images/Top_3_Categories_by_Revenue_per_State.png)
 
 > 💡 **Insight:** Category preferences vary by state — enabling region-specific inventory planning that could improve sell-through rate by ~15%.
 
